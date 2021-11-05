@@ -8,8 +8,11 @@
 }
 
 .card{
+  padding: 0 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
   max-width: 600px;
-  background-color: gray;
+  background-color: rgb(185, 185, 185);
 }
 
 .buttons{
