@@ -16,10 +16,12 @@ function App() {
 
   return (<div>
 
+    <h1>Cards</h1>
+
     <div className='cards'>
       {cards ? cards.map((card) => (
         <div className='card' key={card.id}>
-          <h1>{card.title}</h1>
+          <h2>{card.title}</h2>
           <p>{card.body}</p>
         </div>
       )) : <></>}
