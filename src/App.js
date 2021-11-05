@@ -9,7 +9,7 @@ function App() {
     fetchCards(1);
   })
 
-  return (
+  return (<div>
     
     <div className='cards'>
       {cards ? cards.map((card) => (
@@ -19,6 +19,18 @@ function App() {
         </div>
       )): <></>}
     </div>
+
+    <div>
+      {
+        Array(5).fill('').map((index) => {
+          return <button>
+            {index}
+          </button>
+        })
+      }
+    </div>
+
+  </div>
   );
 }
 
