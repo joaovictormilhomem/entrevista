@@ -24,14 +24,17 @@ function App() {
           <h2>{card.title}</h2>
           <p>{card.body}</p>
         </div>
-      )) : <></>}
+      )) : 'Carregando...'}
     </div>
 
     <div className='buttons'>
       {
         Array(5).fill('').map((_, index) => {
           return (
-            <button className='button' key={index} onClick={() => {setActualPage(index + 1)} }>
+            <button className='button' key={index} onClick={() => {
+              setActualPage(index + 1); 
+              window.scrollTo(0, 0)
+            }}>
               {index + 1}
             </button>
           )
