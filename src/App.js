@@ -11,13 +11,14 @@ function App() {
 
   useEffect(() => {
     fetchCards(actualPage);
-  })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [actualPage])
 
   return (<div>
 
     <div className='cards'>
       {cards ? cards.map((card) => (
-        <div className='card' key={cards.id}>
+        <div className='card' key={card.id}>
           <h1>{card.title}</h1>
           <p>{card.body}</p>
         </div>
@@ -28,7 +29,7 @@ function App() {
       {
         Array(5).fill('').map((_, index) => {
           return (
-            <button key={index} onClick={() => {setActualPage(index + 1)} }>
+            <button className='button' key={index} onClick={() => {setActualPage(index + 1)} }>
               {index + 1}
             </button>
           )

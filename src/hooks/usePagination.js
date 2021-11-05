@@ -25,7 +25,7 @@ export default function usePagination() {
         page: actualPage
       })
     })
-  }, [actualPage])
+  }, [actualPage, location.search, navigate])
 
   return{
     setActualPage,
