@@ -6,7 +6,7 @@ import usePagination from './hooks/usePagination'
 import './App.css';
 
 function App() {
-  const { cards, fetchCards } = useCards(3);
+  const { cards, fetchCards } = useCards(6);
   const { actualPage, setActualPage } = usePagination();
 
   useEffect(() => {
