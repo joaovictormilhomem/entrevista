@@ -38,6 +38,9 @@ h1{
   padding: 15px 20px;
   cursor: pointer;
 }
+.button:hover{
+  background-color: #a0a5a8;
+}
 
 @media screen and (max-width: 768px) {
   .card{
