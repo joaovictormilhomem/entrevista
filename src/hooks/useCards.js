@@ -10,7 +10,7 @@ export default function usePhotos(pageLimit){
     fetch(`http://jsonplaceholder.typicode.com/posts?_start=${positiveVirtualPage}&_limit=${pageLimit}`)
       .then(res => res.json())
       .then(data => setCards(data))
-      .catch(error => window.alert(error))
+      .catch(error => console.log(error))
   }
 
   return{
