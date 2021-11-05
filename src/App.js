@@ -14,7 +14,7 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [actualPage])
 
-  return (<div>
+  return (<div className='container'>
 
     <h1>Cards</h1>
 
